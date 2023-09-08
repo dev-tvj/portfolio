@@ -1,0 +1,36 @@
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+  }
+
+  .socialMedia svg {
+    color: black;
+    margin: 20px;
+    font-size: 70px;
+    cursor: pointer;
+  }
+
+  .footer p {
+    color: black;
+  }
+
+  .iconHover {
+    font-size: 60px !important; /* Tamanho normal do ícone */
+    transition: transform 0.3s !important; /* Adicione uma transição suave para a propriedade transform */
+  }
+
+  .iconHover:hover {
+    transform: scale(1.2) !important; /* Aumente o tamanho do ícone em 20% quando o mouse passar por cima */
+  }
+
+  @media only screen and (max-width: 600px) {
+    .footer svg {
+      font-size: 50px;
+    }
+  }

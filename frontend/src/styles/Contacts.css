@@ -1,0 +1,119 @@
+.myForm {
+    width: 500px;
+    font-family: "Ubuntu", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    font-size: 95px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rightPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+
+.leftPanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 750px;
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+
+.contactsIcons {
+    margin-right: 10px;
+    font-size: 40px !important;
+}
+
+.contactInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.contactItem {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.linkedinContact {
+    color: #363537;
+    text-decoration: none;
+}
+
+.linkedinContact:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.contactItem i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .myForm {
+        width: 100%;
+    }
+
+    .rightPanel {
+        width: 100%;
+        padding-right: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightPanel {
+        padding-left: 25px;
+        padding-right: 5px;
+        padding-bottom: 65px;
+
+    }
+
+    .leftPanel {
+        padding-left: 15px;
+    }
+
+    .myForm {
+        padding-left: 0px;
+    }
+}
+

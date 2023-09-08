@@ -1,0 +1,227 @@
+.navbar {
+  display: flex;
+  height: 130px;
+  align-items: center;
+  flex-direction: row;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.links ul {
+  margin: 150px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 500px;
+  text-align: center;
+}
+
+.links li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+
+.links a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  font-size: 22px !important;
+}
+
+.links a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.links a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.leftNavBarContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.midNavBarContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightNavBarContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.logo {
+  width: 95px;
+  padding-left: 25px;
+}
+
+.loginLink {
+  display: flex;
+  font-size: 22px !important;
+}
+
+.links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+a, a:hover{
+  color:white !important;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.toggleButton {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.toggleButton svg {
+  font-size: 50px;
+}
+
+.toggleButton button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#open {
+  height: 100vh;
+}
+
+#open .links {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#open a {
+  width: 100%;
+  text-align: center;
+}
+
+.toggleButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-left: 20px;
+}
+
+.logo {
+  display: block !important;
+}
+
+
+@media only screen and (max-width: 960px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .midNavBarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .rightNavBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+  .toggleButton button {
+    margin-right: 0px;
+  }
+  .toggleButton {
+    display: flex;
+    justify-content: center;
+  }
+  #close a {
+    display: flex;
+  }
+  #open a {
+  text-align: center;
+  }
+  #close .links {
+    display: none;
+  }
+
+  .toggleButtonContainer {
+  padding-left: 0px;
+  margin-right: 0;
+  }
+  .loginLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    font-size: 22px !important;
+  }
+}
+
+
+@media only screen and (min-width: 960px) {
+  .toggleButton {
+    display: none;
+  }
+  .hiddenLinks {
+    display: none;
+  }
+  #open {
+    height: 100px;
+  }
+  #open .links {
+    flex-direction: row;
+  }
+  #open .loginLink {
+    display: flex;
+  }
+}
+
+
